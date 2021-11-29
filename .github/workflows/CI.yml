@@ -47,5 +47,5 @@ jobs:
         with:
          context: .
          push: true
-         tags: hansiknows/app:latest
+         tags: ${{ secrets.DOCKERHUB_USERNAME }}/app:latest
          
