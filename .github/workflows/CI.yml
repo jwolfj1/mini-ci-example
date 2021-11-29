@@ -37,9 +37,9 @@ jobs:
       - name: Login to DockerHub
         uses: docker/login-action@v1 
         with:
-           username: \${{ secrets.DOCKERHUB_USERNAME }}
-           password: \${{ secrets.DOCKERHUB_TOKEN }}
-          
+         username: \${{ secrets.DOCKERHUB_USERNAME }}
+         password: \${{ secrets.DOCKERHUB_TOKEN }}
+         
       # Declare variables to store branch name and short Git commit SHA    
       - name: Declare variables
         id: vars
