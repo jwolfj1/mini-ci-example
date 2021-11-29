@@ -55,5 +55,5 @@ jobs:
         with:
          context: .
          push: true
-         tags: hansiknows/app:{{ steps.vars.outputs.sha_short }}
+         tags: ${{ secrets.DOCKERHUB_USERNAME }}/app:{{ steps.vars.outputs.sha_short }}
          
